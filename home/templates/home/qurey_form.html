@@ -1,0 +1,20 @@
+{% extends "home/base.html" %} {% load static%} {% block title %} Tax/Compliace {% endblock title %} {% block body_block %}
+
+<div class="qurey_form">
+    <h2>Qurey Form <i class="fa fa-balance-scale" style="font-size:32px;color:black"></i> </h2>
+    <form action="#" method="post">
+        {% csrf_token %}
+        <label for="name">Full Name</label>
+        <input class="form_design" type="text" name="name" placeholder="Name">
+        <label for="phone">Phone Number</label>
+        <input class="form_design" type="text" name="phone" placeholder="Phone Number">
+        <label for="email">Email</label>
+        <input class="form_design" type="email" name="email" placeholder="Email">
+        <label for="qurey">Qurey</label>
+        <input class="form_design" type="text" name="qurey" placeholder="Qurey">
+        <input class="form_design" type="submit">
+    </form>
+</div>
+
+
+{% endblock body_block %}

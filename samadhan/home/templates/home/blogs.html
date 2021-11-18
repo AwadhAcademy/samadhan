@@ -1,0 +1,32 @@
+{% extends "home/base.html" %} {% load static%} {% block title %} Blogs {% endblock title %} {% block body_block %}
+<div class="blog_portal">
+    {% for i in data%}
+    <div class="blogs_data1">
+        <div class="image1">
+            <img class="" src="/media/{{i.image}}" alt="Now Load">
+        </div>
+        <div class="matter">
+            <div class="heading1">
+                {{i.heading}}
+            </div>
+            <div class="data1">
+                {{i.information}}
+            </div>
+        </div>
+    </div>
+    <!-- <div class=" blogs_data1 blogs_data2">
+        <div class="image1">
+            <img class="" src="/media/{{i.image}}" alt="Now Load">
+        </div>
+        <div class="matter">
+            <div class="heading1">
+                {{i.heading}}
+            </div>
+            <div class="data1">
+                {{i.information}}
+            </div>
+        </div>
+    </div> -->
+    {% endfor%}
+</div>
+{% endblock body_block %}1
